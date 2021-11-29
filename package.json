@@ -1,0 +1,18 @@
+{
+  "name": "@yulokevin/lotide",
+  "version": "1.0.0",
+  "description": "lotide copy",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Kevin Yulo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
