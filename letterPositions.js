@@ -1,14 +1,4 @@
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArrayEquals = function(alice, bob) {
   if (eqArrays(alice, bob)) {
@@ -33,10 +23,10 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
-assertArrayEquals(letterPositions("hello").h, [0]);
-assertArrayEquals(letterPositions("hello").e, [1]);
-assertArrayEquals(letterPositions("hello").l, [2, 3]);
-assertArrayEquals(letterPositions("hello").o, [4]);
-assertArrayEquals(letterPositions("hello").o, [3]); //fail check
+// assertArrayEquals(letterPositions("hello").h, [0]);
+// assertArrayEquals(letterPositions("hello").e, [1]);
+// assertArrayEquals(letterPositions("hello").l, [2, 3]);
+// assertArrayEquals(letterPositions("hello").o, [4]);
+// assertArrayEquals(letterPositions("hello").o, [3]); //fail check
 
-console.log(letterPositions("lighthouse in the house"));
+// console.log(letterPositions("lighthouse in the house"));
