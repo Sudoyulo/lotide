@@ -1,6 +1,5 @@
 const assertArraysEqual = require('./assertArraysEqual');
 const eqArrays = require('./eqArrays');
-const recursion = require('./eqArrays');
 
 const middle = function(malchom) {
   let middleIndex = Math.floor(malchom.length / 2);

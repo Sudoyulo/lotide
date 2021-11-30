@@ -2,9 +2,11 @@ const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(alice,bob) {
   if (eqArrays(alice, bob)) {
-    console.log("They are equal.");
+    // console.log("They are equal.");
+    return true;
   } else {
-    console.log("They are not equal.");
+    // console.log("They are not equal.");
+    return false;
   }
 };
 

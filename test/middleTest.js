@@ -4,9 +4,8 @@ const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
 const eqArrays = require('../eqArrays');
 const assertEqual = require('../assertEqual');
-const recursion = require('../eqArrays');
 
-describe("middle", () => {
+describe("#middle", () => {
   it("returns [2] for [1, 2, 3]", () => {
     assert.deepEqual(middle([1, 2, 3]), [2]);
   });

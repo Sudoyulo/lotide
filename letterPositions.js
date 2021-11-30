@@ -1,12 +1,5 @@
 const eqArrays = require('./eqArrays');
-
-const assertArrayEquals = function(alice, bob) {
-  if (eqArrays(alice, bob)) {
-    console.log("They are equal.");
-  } else {
-    console.log("They are not equal.");
-  }
-};
+const assertArrayEquals = require('./assertArraysEqual');
 
 const letterPositions = function(sentence) {
   const results = {};
